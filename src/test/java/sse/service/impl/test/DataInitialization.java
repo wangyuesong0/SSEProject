@@ -1,6 +1,5 @@
 package sse.service.impl.test;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -9,8 +8,6 @@ import java.util.List;
 import org.junit.Test;
 
 import sse.entity.Administrator;
-import sse.entity.Document;
-import sse.entity.DocumentComment;
 import sse.entity.Menu;
 import sse.entity.Student;
 import sse.entity.SystemMessage;
@@ -19,7 +16,6 @@ import sse.entity.TimeNode;
 import sse.entity.Topic;
 import sse.entity.User;
 import sse.entity.Will;
-import sse.enums.DocumentTypeEnum;
 import sse.enums.MatchLevelEnum;
 import sse.enums.MatchTypeEnum;
 import sse.enums.TimeNodeTypeEnum;
