@@ -2,6 +2,7 @@ package sse.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,19 @@ public class LoginController {
     @RequestMapping(value = "/login", method = { RequestMethod.POST })
     public BasicJson login(HttpServletRequest request, HttpServletResponse response, UserLoginForm command) {
            return userService.doLogin(command, request);
+    }
+    
+    
+    @ResponseBody
+    @RequestMapping(value="/logout", method={ RequestMethod.POST})
+    public BasicJson loginout(HttpServletRequest request){
+        HttpSession session = request.getSession(false);
+        if(session != null)
+            session.invalidate();
+        BasicJson j = new BasicJson();
+        j.setMsg("退出成功!");
+        j.setSuccess(true);
+        return j;
     }
 
 }

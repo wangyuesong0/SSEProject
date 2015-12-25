@@ -19,6 +19,9 @@
 	src="${pageContext.request.contextPath}/resources/util.js"></script>
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/resources/common.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/resources/js/jquery.menu.js"></script>
+<link id="easyuiTheme" rel="stylesheet" href="${pageContext.request.contextPath}/easyui/themes/<c:out value="${cookie.easyuiThemeName.value}" default="default"/>/easyui.css" type="text/css"></link>
 
 <!-- Calender -->
 <link rel="stylesheet" type="text/css"

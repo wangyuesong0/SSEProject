@@ -8,5 +8,6 @@
 
 </head>
 <body>
+<div style="text-align:center">Copyright 2015 软件学院</div>
 </body>
 </html>
